@@ -1,0 +1,37 @@
+---
+output:
+  pdf_document:
+    latex_engine: xelatex
+csl: "https://www.zotero.org/styles/chicago-author-date-fr"
+fontsize: 12pt
+header-includes:
+- \usepackage{setspace}
+- \singlespacing
+---
+
+
+```{r, echo=FALSE}
+biblio <- bibtex::read.bib("bib/replication_games.bib")
+```
+<style>
+body {
+  text-align: justify;
+}
+</style>
+# Litterature Review
+
+`r capture.output(print(biblio["abramson_etal22"]))` 
+
+`r capture.output(print(biblio["blair_etal22"]))` 
+
+`r capture.output(print(biblio["johns_etal22"]))` 
+
+`r capture.output(print(biblio["krcmaric23"]))` 
+
+`r capture.output(print(biblio["meng_paine22"]))` 
+
+`r capture.output(print(biblio["simmons_kenwick22"]))` 
+
+`r capture.output(print(biblio["tobin_etal22"]))`
+
+# Summary
